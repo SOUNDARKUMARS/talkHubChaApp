@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The TalkHUb</title>
+    <link rel="stylesheet" href="styles/indxstyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left_pannel">
+            <div id="user_info">
+                <img id="profile_image" src="img/user_male.png" alt="">
+                <br>
+                <p class="UserName"><span id="username">UserName</span> </p>
+                <p class="email"><span id="email" >usercontact@gmail.com</span> </p>
+                <div id="chatting_buttons">
+                    <br>
+                    
+                    <label id="label_chat" for="chat_check">Chat</label>
+                    <label id="label_contact" for="contact_check">Contact</label>
+                    <label id="label_settings" for="Settings_check">Settings</label>
+                </div>
+            </div>
+            <input type="button" id="logout" value="Logout">
+        </div>
+
+        <div class="right_pannel">
+
+            <div class="header">
+                
+                Talk HUbb
+            </div>
+            <div class="container">
+                <div id="loader_holder" class="loader_on"><img src="img/ld.gif" alt=""></div>
+
+                <div style="text-align: center;" id="inner_left_pannel" class="inner_left_pannel">
+                </div>                
+                    <input type="radio" id="chat_check" name="checkbox" style="display: none;">
+                    <input type="radio" id="contact_check" name="checkbox"style="display: none;">
+                    <input type="radio" id="Settings_check" name="checkbox"style="display: none;">
+                <div id="inner_right_pannel" class="inner_right_pannel">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ind.js"></script>
+
+</body>
+</html>

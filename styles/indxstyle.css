@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Pacifico&display=swap');
+body{
+    background-color: #1d1e1f;
+    font-family: 'Signika Negative', sans-serif;
+}
+.wrapper{
+    /* max-width: 1000px; */
+    width: 1000px;
+    height: 618px;
+    background-color: #2056be;
+    display: flex;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 30px;
+ 
+
+}
+.left_pannel{
+    min-height: 400px;
+    max-width:180px;
+    background-color:rgb(113, 136, 165);
+    flex: 1;
+    border-radius: 30px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 1px 1px 20px black;
+}
+.left_pannel img{
+    border:3px solid #0c285b;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(50, 47, 149, 0.563);
+}
+.left_pannel .UserName{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.left_pannel .email{
+    color: rgba(8, 33, 88, 0.859);
+    font-size: 12px;
+    text-align: center;
+    
+}
+.left_pannel label{
+    margin: auto;
+    display: block;
+    width: 70%;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    background-color:#2056be;
+    border: 1px solid white; 
+    margin-top: 8px;
+    border-radius: 5px;
+    color: white;
+    transition: all ease .2s;
+    cursor:pointer;
+}
+.left_pannel label:hover{
+    color: #2056be;
+    background-color:#ffffff;
+}
+.left_pannel label:active{
+    transform:translateY(-7px)
+}
+.right_pannel{
+    margin-bottom: 3px;
+    min-height: 400px;
+    flex: 4;
+}
+.header{
+    width: auto;
+    height: 70px;
+    background-color: #ffffff00;
+    border-top-right-radius: 30px;
+    color: white;
+    font-family: 'Bagel Fat One', cursive;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container{
+    display: flex;
+    width: 740px;
+    background-color: #2056be;
+    height: 400px;
+}
+
+.inner_left_pannel{
+    padding-top: 10px; 
+    box-shadow: inset 0px 0px 30px rgba(41, 77, 90, 0.914);
+    min-height: 500px;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 8px;
+}
+.inner_left_pannel .radioButtons{
+    width: 80px;
+    position: relative;
+    left: 50px;
+}
+.inner_right_pannel{
+    box-shadow: inset 0px 0px 30px rgba(41, 77, 90, 0.914);
+    height: 510px;
+    width: 1000px;
+    background-color: rgb(168, 190, 219);
+    flex: 2.3;
+    border-radius: 20px;
+    margin: 5px;
+    transition: all ease 1.2s;
+}
+/* send button */
+
+.input-container {
+    margin-top: 6px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 10px;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    white-space: nowrap;
+    display: block;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    margin-left: -1px;
+  }
+  
+  .input-container .input {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 18.5px;
+    padding-right: 5px;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .input-container span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6b7385;
+    background: #d4def5;
+    border: 1px solid #CDD9ED;
+    font-weight: bold;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+    position: relative;
+    z-index: 2; /* Increase the z-index */
+  }
+  
+  .input-container:focus-within > span {
+    color: #fff;
+    background-color:rgb(81 203 95);
+    border-color:rgb(81 203 95);
+  }
+  
+  .input-container > span {
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #202121;
+    border: 1px solid  #CDD9ED;
+    background: #fff;
+    transition: border 0.3s ease;
+    position: relative;
+    z-index: 1; /* Increase the z-index */
+  }
+  
+  .input::placeholder {
+    color: #acc4f4;
+    font-size: 16px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #148cd1;
+  }
+  
+
+
+#Settings_check:checked ~ .inner_right_pannel{
+    flex: 0;
+}
+#contact_check:checked ~ .inner_right_pannel{
+    flex: 0;
+}
+#logout{
+    margin: auto;
+    display: block;
+    width: 74px;
+    height: 30px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #ffffff;
+    border: 1px solid #051533;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    border-radius: 5px;
+    color:#051533;
+    transition: all ease .2s;
+    cursor:pointer; 
+    transition: all ease-in-out .2s;
+}
+#logout:hover{
+    color: #ffffff;
+    background-color:#051533;
+    transform: scale(.99);
+}
+#logout:active{
+    background-color: #0c285b;
+}
+#contacts{
+    height: 120px;
+    width: 120px;
+    margin: 7px;
+    margin-top: 5px;
+    display: inline-block;
+}
+#contacts img{
+    width: 100px;
+    height: 100px;
+}
+#active_contacts{
+    height: 95px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid;
+    box-shadow: 5px 10px 20px grey;
+    border-radius: 20px;
+    background-color: rgb(204, 206, 205);
+}
+#active_contacts img{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(17, 66, 119, 0.441);
+    border: .8px slategrey solid;
+}
+#send_button input{
+    border: none;
+    color: rgb(57, 53, 53);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+
+}
+
+#message_left{
+    height: auto;
+    margin: 10px;
+    padding: 2px;
+    width: 60%;
+    min-width: 150px;
+    float: left;
+    background-color: rgb(18 116 179 / 45%);
+    border-radius: 20px;
+    margin-right: 5px;
+    box-shadow: 3px 3px 3px darkslategray;
+
+}
+#message_left #prof{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border: .8px slategrey solid;
+}
+
+#paper_clip img{
+    width: 10px;
+    height: auto;
+}
+
+#paper_clip{
+background-color: white;
+margin: 0px;
+padding: 6px;
+border: 1px solid lightgreen;
+transition: all ease .2s;
+}
+#paper_clip:hover{
+
+    background-color:rgb(81 203 95);
+    }
+#paper_clip:active{
+    background-color: rgb(81 203 95);
+}
+#message_right{
+    height: auto;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 12px;
+    width: 60%;
+    min-width: 150px;
+    float: right;
+    background-color: rgb(222 149 207 / 82%);
+    border-radius: 20px;
+    color: #332b2b;
+    padding-top: 5px;
+    margin-right: 5px;
+    box-shadow: 3px 3px 3px darkslategray;
+}
+#message_right #datespan{
+    position: relative;
+}
+#message_right span{
+    position:absolute ;
+    top: -25px;
+    right: 43px;
+    opacity: 0.86;
+}
+#message_right #prof{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    float: right;
+    border: .8px slategrey solid;
+}
+#messages_holder{
+    height: 450px;
+    overflow-y: scroll;
+}
+#seen_img{
+
+    position: relative;
+}
+#seen_img #seen{
+    width: 22px;
+    height: 22px;
+    border: none;
+    position: absolute;
+    top: 30px;
+}
+#del_cont{
+    cursor: pointer;
+    position: relative;
+}
+.delete_msg{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -33px;
+    top: 5px;
+    opacity: 0.65;
+    transition: all ease .2s;
+}
+.delete_msg:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    
+}
+
+#shared_img{
+    border-radius: 5%;
+    margin-right: 6px;
+}
+.loader_on{
+    position: absolute;
+    top: 20px;
+    
+}
+.loader_off{
+   display: none;
+}
+.loader_on img{
+    width: 75px;
+    border-radius: 50%;
+}
+
+@media(max-width:600px) {
+    .wrapper {flex-direction: column;}
+
+    .left_pannel {
+        min-height: 288px;
+        max-width: inherit;
+        background-color: rgb(113, 136, 165);
+        flex: 1;
+        border-radius: 30px;
+        margin: 10px;
+        position: relative;
+        box-shadow: 1px 1px 20px black;
+    }
+    #user_info{
+        display: block;
+    }
+    .wrapper {
+        width: 1000px;
+        height: 1115px;
+        background-color: #acc5f4;
+        display: flex;
+        margin: auto;
+        margin-top: 1%;
+        border-radius: 30px;
+    }
+    #username{
+        position: absolute;
+        left: 50px;
+        margin-top: 20px;
+        font-size: larger;
+
+    }
+    #email{
+        position: absolute;
+        left: 50px;
+        bottom: 30px;
+        font-size: large;
+    }
+    #chatting_buttons{
+        position: absolute;   
+        left: 30%; 
+        top: 18px;
+    }
+    #chatting_buttons label{
+        width: 500px;  
+       }
+    #logout{
+        position: absolute;   
+        right: -82%;
+   
+    }
+    .container {
+        display: flex;
+        width: 1000px;
+        background-color: #ffffff00;
+        height: 7in;
+    }
+    .inner_left_pannel{
+        border: 1px solid rgb(10, 10, 105);
+        height: 7in;
+    }
+    .inner_right_pannel {
+        border: 1px solid rgb(10, 10, 105);
+        box-shadow: inset 0px 0px 30px rgba(41, 77, 90, 0.914);
+        height: 7.11in;
+        width: 1000px;
+        background-color: rgb(168, 190, 219);
+        flex: 3;
+        border-radius: 20px;
+        margin: 5px;
+        transition: all ease 1.2s;
+    }
+    #messages_holder {
+        height: 612.56px;
+        overflow-y: scroll;
+    }
+    #active_contacts img {
+        border-radius: 20px;
+        object-fit: cover;
+        width: 232px;
+        height: 227px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    
+    #active_contacts {
+        height: 95px;
+        border: none;
+        box-shadow: initial;
+        background-color: initial;
+        border: initial;
+    }
+}
